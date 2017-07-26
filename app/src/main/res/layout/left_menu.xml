@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qishui="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/colorPrimary" />
+
+            <com.qishui.zhou.gank.view.CircleImageView
+                android:id="@+id/left_iv_user_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/qishui"
+                qishui:civ_border_color="#FF000000"
+                qishui:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/left_tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/left_iv_user_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:padding="5dp"
+                android:text="@string/username"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/left_tv_mrgx"
+                style="@style/left_menu_style"
+                android:layout_below="@id/left_tv_user_name"
+                android:drawableLeft="@drawable/dayupdate"
+                android:drawablePadding="10dp"
+                android:text="每日更新" />
+
+            <TextView
+                android:id="@+id/left_tv_meizi"
+                style="@style/left_menu_style"
+                android:layout_below="@id/left_tv_mrgx"
+                android:drawableLeft="@drawable/meizi"
+                android:drawablePadding="10dp"
+                android:text="@string/gril" />
+
+            <TextView
+                android:id="@+id/left_tv_android"
+                style="@style/left_menu_style"
+                android:layout_below="@id/left_tv_meizi"
+                android:drawableLeft="@drawable/android"
+                android:text="Android" />
+
+            <TextView
+                android:id="@+id/left_tv_ios"
+                style="@style/left_menu_style"
+                android:layout_below="@id/left_tv_android"
+                android:drawableLeft="@drawable/ios"
+                android:drawablePadding="10dp"
+                android:text="IOS" />
+
+            <TextView
+
+                android:id="@+id/left_tv_js"
+                style="@style/left_menu_style"
+                android:layout_below="@id/left_tv_ios"
+                android:drawableLeft="@drawable/js"
+                android:drawablePadding="10dp"
+                android:text="JS" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/left_tv_aboutme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableLeft="@drawable/abountme"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:text="@string/aboutme"
+            android:textColor="@drawable/left_menu_text_selector"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/left_tv_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableLeft="@drawable/day"
+            android:drawablePadding="5dp"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:text="@string/day"
+            android:textColor="@drawable/left_menu_text_selector"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/card_background_white"
+    android:orientation="vertical">
+
+    <com.qishui.zhou.gank.view.RatioLayout
+        android:id="@+id/ratiolay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4887EE"
+        app:ratio="2.43">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/mz_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.qishui.zhou.gank.view.RatioLayout>
+
+
+
+    <TextView
+        android:padding="3dp"
+        android:layout_margin="5dp"
+        android:gravity="right"
+        android:textColor="#666"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mz_author"
+        android:text="贡献者：daimajia"/>
+
+
+
+</LinearLayout>

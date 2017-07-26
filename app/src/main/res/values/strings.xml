@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gank</string>
+    <string name="login_q">快速登录</string>
+    <string name="login_a">直接进入</string>
+    <string name="aboutme">关于我</string>
+    <string name="day">日间</string>
+    <string name="gril">妹子</string>
+    <string name="username">七水剑帝</string>
+</resources>
